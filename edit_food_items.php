@@ -25,7 +25,9 @@ header('Location: managerlogin.php');
   </script>
 
   <body>
-
+<?php
+include('admin_panel.php');
+?>
   
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <span class="glyphicon glyphicon-chevron-up"></span>
@@ -102,12 +104,12 @@ header('Location: managerlogin.php');
     	<div class="col-xs-3" style="text-align: center;">
 
     	<div class="list-group">
-    		<a href="myrestaurant.php" class="list-group-item ">My Restaurant</a>
-    		<a href="view_food_items.php" class="list-group-item ">View Food Items</a>
-    		<a href="add_food_items.php" class="list-group-item ">Add Food Items</a>
-    		<a href="edit_food_items.php" class="list-group-item active">Edit Food Items</a>
-    		<a href="delete_food_items.php" class="list-group-item ">Delete Food Items</a>
-        <a href="view_order_details.php" class="list-group-item ">View Order Details</a>
+    		<!-- <a href="myrestaurant.php" class="list-group-item ">My Restaurant</a> -->
+    		<!-- <a href="view_food_items.php" class="list-group-item ">View Food Items</a> -->
+    		<!-- <a href="add_food_items.php" class="list-group-item ">Add Food Items</a> -->
+    		<!-- <a href="edit_food_items.php" class="list-group-item active">Edit Food Items</a> -->
+    		<!-- <a href="delete_food_items.php" class="list-group-item ">Delete Food Items</a> -->
+        <!-- <a href="view_order_details.php" class="list-group-item ">View Order Details</a> -->
     	</div>
     </div>
     

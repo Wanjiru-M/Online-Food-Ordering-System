@@ -1,5 +1,6 @@
 <?php
-include('session_m.php');
+include('session_m.php')
+;
 
 if(!isset($login_session)){
 header('Location: managerlogin.php'); // Redirecting To Home Page
@@ -15,11 +16,17 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
 
   <link rel="stylesheet" type = "text/css" href ="css/view_food_items.css">
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
   <body>
-
+  
+<?php
+include('admin_panel.php');
+?>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <span class="glyphicon glyphicon-chevron-up"></span>
@@ -96,12 +103,12 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
     	<div class="col-xs-3" style="text-align: center;">
 
     	<div class="list-group">
-    		<a href="myrestaurant.php" class="list-group-item ">My Restaurant</a>
-    		<a href="view_food_items.php" class="list-group-item active">View Food Items</a>
-    		<a href="add_food_items.php" class="list-group-item ">Add Food Items</a>
-    		<a href="edit_food_items.php" class="list-group-item ">Edit Food Items</a>
-    		<a href="delete_food_items.php" class="list-group-item ">Delete Food Items</a>
-        <a href="view_order_details.php" class="list-group-item ">View Order Details</a>
+    		<!-- <a href="myrestaurant.php" class="list-group-item ">My Restaurant</a> -->
+    		<a href="view_food_items.php" class="lis-group-item active"></a>
+    		<!-- <a href="add_food_items.php" class="list-group-item ">Add Food Items</a> -->
+    		<!-- <a href="edit_food_items.php" class="list-group-item ">Edit Food Items</a> -->
+    		<!-- <a href="delete_food_items.php" class="list-group-item ">Delete Food Items</a> -->
+        <!-- <a href="view_order_details.php" class="list-group-item ">View Order Details</a> -->
     	</div>
     </div>
     

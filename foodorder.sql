@@ -156,7 +156,8 @@ CREATE TABLE `orders` (
   `order_date` date NOT NULL,
   `username` varchar(30) NOT NULL,
   `R_ID` int(30) NOT NULL,
-  `order_status` VARCHAR(20) NOT NULL DEFAULT 'pending' AFTER `R_ID`
+  `order_status` VARCHAR(20) NOT NULL DEFAULT 'pending' AFTER `R_ID`,
+  'customer_username' varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
