@@ -42,3 +42,16 @@ if ($db->connect_error) {
 }
 ?>
 ```
+
+Modify other settings in config.php if necessary, such as base URL or currency settings.
+
+Start your web server.
+
+Access the system through your web browser using the configured base URL.
+
+## Usage
+
+- Users can browse through available food items, view details, and add them to their cart.
+- They can proceed to checkout, provide delivery details, and make payments securely.
+- Admin users can manage food items, categories, orders, and customers through the admin panel.
+- Regular users can create accounts, manage their profiles, view order history, and reorder from previous orders.
