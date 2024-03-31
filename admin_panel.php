@@ -82,6 +82,8 @@
             <li><a href="delete_food_items.php">Delete Food Items</a></li>
                         <li><a href="view_order_details.php">View Order Details</a></li>
                         <li><a href="users.php">Users</a></li>
+                        <!-- <li><a href="users.php">Users</a></li>
+                     -->
             <li class="dropdown">
                 <a href="#">Reports</a>
                 <div class="dropdown-content">
