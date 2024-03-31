@@ -70,7 +70,7 @@ include('admin_panel.php');
                 <th>Contact</th>
                 <th>Address</th>
                 <th>Registration Date</th>
-                <th> Action</th>
+                <!-- <th> Action</th> -->
             </tr>
         </thead>
         <tbody>
@@ -84,21 +84,7 @@ include('admin_panel.php');
                 echo "<td>{$row['contact']}</td>";
                 echo "<td>{$row['address']}</td>";
               echo "<td>{$row['reg_date']}</td>";
-              echo "<td>
-              <form method='post' action='edit_user.php'>
-                        <input type='hidden' name='username' value='{$row['username']}'>
-                        <input type='hidden' name='fullname' value='{$row['fullname']}'>
-                        <input type='hidden' name='email' value='{$row['email']}'>
-                        <input type='hidden' name='contact' value='{$row['contact']}'>
-                        <input type='hidden' name='address' value='{$row['address']}'>
-                        <button type='submit' title='Edit'><i class='fas fa-edit'></i></button>
-                    </form>
-                    <form method='post' action='delete_user.php'>
-                        <input type='hidden' name='username' value='{$row['username']}'>
-                        <button type='submit'title='Delete'><i class='fas fa-trash'></i></button>
-                    </form>
-                </td>";
-                echo "</tr>";
+          
             }
             // Free result set
             mysqli_free_result($resultUsers);

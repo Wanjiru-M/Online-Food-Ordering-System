@@ -304,9 +304,24 @@ $total = $total + ($values["food_quantity"] * $values["food_price"]);
 <td></td>
 </tr>
 </table>
-<?php
-  echo '<a href="cart.php?action=empty"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Empty Cart</button></a>&nbsp;<a href="foodlist.php"><button class="btn btn-warning">Continue Shopping</button></a>&nbsp;<a href="payment.php"><button class="btn btn-success pull-right"><span class="glyphicon glyphicon-share-alt"></span> Check Out</button></a>';
+<?php 
+if(!empty($_SESSION["cart"]))
+{
+  $total = 0;
+  foreach ($_SESSION["cart"] as $keys => $values)
+  {
+    $total +=
+    $values["food_quantity"] * $values["food_price"];
+  }
+
+
 ?>
+
+  <a href="cart.php?action=empty"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Empty Cart</button></a>&nbsp;<a href="foodlist.php"><button class="btn btn-warning">Continue Shopping</button></a>&nbsp;<a href="./payment.php?total=<?php echo $total;?>"><button class="btn btn-success pull-right"><span class="glyphicon glyphicon-share-alt"></span> Check Out</button></a>
+  <?php
+}
+?>
+
 </div>
 <br><br><br><br><br><br><br>
 <?php

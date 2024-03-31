@@ -21,7 +21,7 @@ if (!$resultSalesReport) {
 }
 
 // Initialize CSV data
-$csvData = "Year,Month,Day,Total Sales,Top Product,Payment Method\n";
+$csvData = "Year,Month,Day,Total Sales,Top Product\n";
 
 // Fetch data and format as CSV
 while ($row = mysqli_fetch_assoc($resultSalesReport)) {

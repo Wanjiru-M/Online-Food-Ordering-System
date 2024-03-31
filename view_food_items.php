@@ -12,7 +12,7 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
 
   <head>
     <title> Manager Login | Between Two Buns </title>
-  </head>
+  
 
   <link rel="stylesheet" type = "text/css" href ="css/view_food_items.css">
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
@@ -21,8 +21,55 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
 <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+</head>
   <body>
+    <style>
+       body{
+            font-family: "Bellota Text", sans-serif;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-left: 10px;
+            z-index:1;
+            padding: 700px;
+        }
+        th, td {
+            padding: 25px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #CEDEBD;
+        }
+        h4{
+            margin-left: 260px;
+            background-color: #183D3D;
+            height: 50px;
+            color:#fff;
+            padding: 10px;
+        }
+        
+                 .btn-download {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        /* font-size: 16px; */
+        transition: background-color 0.3s;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+
+    .btn-download:hover {
+        background-color: #45a049;
+    }
+</style>
   
 <?php
 include('admin_panel.php');
@@ -116,7 +163,7 @@ include('admin_panel.php');
 
     
     <div class="col-xs-9">
-      <div class="form-area" style="padding: 0px 100px 100px 100px;">
+      <div class="form-area" style="padding: 0px 10px 10px 10px;">
         <form action="" method="POST">
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> YOUR FOOD ITEMS LIST </h3>

@@ -7,10 +7,22 @@ header("location: customerlogin.php");
 }
 ?>
 
+
+<?php
+
+//get total amount
+$Amount = isset($_GET['total'])? $_GET['total'] : null;
+
+
+
+?>
+
+
+
 <html>
 
   <head>
-    <title> Cart | Le Cafe' </title>
+    <title> Cart | Between Two Buns </title>
   </head>
   <style>
     .footer{
@@ -57,7 +69,7 @@ header("location: customerlogin.php");
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Le Cafe'</a>
+          <a class="navbar-brand" href="index.php">Between Two Buns</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -180,7 +192,7 @@ $gtotal = 0;
   <a href="cart.php"><button class="btn btn-warning"><span class="glyphicon glyphicon-circle-arrow-left"></span> Go back to cart</button></a>
   <a href="onlinepay.php"><button class="btn btn-success"><span class="glyphicon glyphicon-credit-card"></span> Pay Online</button></a>
   <a href="COD.php"><button class="btn btn-success"><span class="glyphicon glyphicon-"></span> Cash On Delivery</button></a>
- <a href="checkout.php"><button class="btn btn-success"><span class="glyphicon glyphicon-"></span> Pay with M-PESA</button></a>
+ <a href="./checkout.php?total=<?php echo $Amount ?>"><button class="btn btn-success"><span class="glyphicon glyphicon-"></span> Pay with M-PESA</button></a>
 </h1>
         
 

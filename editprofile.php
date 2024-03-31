@@ -48,6 +48,7 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            
         }
         button[type="submit"]:hover {
             background-color: #45a049;
@@ -110,7 +111,9 @@ if (isset($_SESSION["login_user2"])) {
         echo "<input type='tel' name='contact' id='contact' value='" . $user['contact'] . "' required>";
         echo "<label for='address'>Address:</label>";
         echo "<textarea name='address' id='address' required>" . $user['address'] . "</textarea>";
-        echo "<button type='submit'>Update Profile</button>";
+        echo "<button type='submit'>Update Profile</button>&nbsp;&nbsp;";
+echo "<button type='submit'>Back to Profile</button>";
+ 
         echo "</form>";
     } else {
         echo "Error: User not found.";

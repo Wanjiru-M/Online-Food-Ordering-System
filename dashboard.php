@@ -239,7 +239,7 @@ h3{
         <p><?php echo $rowPendingOrders['pending_orders']; ?></p>
     </div>
      <div class="details-link">
-        <i class="fas fa-eye"></i> <a href="view_food_items.php">View Details</a>
+        <i class="fas fa-eye"></i> <a href="view_order_details.php">View Details</a>
     </div>
 </div>
 
@@ -250,7 +250,7 @@ h3{
         <p><?php echo $rowCancelledOrders['cancelled_orders']; ?></p>
     </div>
      <div class="details-link">
-        <i class="fas fa-eye"></i> <a href="view_food_items.php">View Details</a>
+        <i class="fas fa-eye"></i> <a href="view_order_details.php">View Details</a>
     </div>
 </div>
 
@@ -261,7 +261,7 @@ h3{
         <p><?php echo $rowApprovedOrders['approved_orders']; ?></p>
     </div>
      <div class="details-link">
-        <i class="fas fa-eye"></i> <a href="view_food_items.php">View Details</a>
+        <i class="fas fa-eye"></i> <a href="view_order_details.php">View Details</a>
     </div>
 </div>
 <div class="content-box total-section">
@@ -271,7 +271,7 @@ h3{
         <p><?php echo $rowDispatchedOrders['dispatched_orders']; ?></p>
     </div>
      <div class="details-link">
-        <i class="fas fa-eye"></i> <a href="view_food_items.php">View Details</a>
+        <i class="fas fa-eye"></i> <a href="view_order_details.php">View Details</a>
     </div>
 </div>
 
@@ -283,7 +283,7 @@ h3{
         <p><?php echo $rowDeliveredOrders['delivered_orders']; ?></p>
     </div>
      <div class="details-link">
-        <i class="fas fa-eye"></i> <a href="view_food_items.php">View Details</a>
+        <i class="fas fa-eye"></i> <a href="view_order_details.php">View Details</a>
     </div>
 </div>
 

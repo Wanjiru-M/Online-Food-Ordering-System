@@ -68,7 +68,7 @@ mysqli_close($conn);
         cursor: pointer;
         /* font-size: 16px; */
         transition: background-color 0.3s;
-        margin-left: 835px;
+        margin-left: 820px;
         margin-top: -10px;
     }
 

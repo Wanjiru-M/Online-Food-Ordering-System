@@ -7,7 +7,7 @@ include('session_m.php');
 $sqlUserReport = "SELECT c.fullname, c.email, c.contact, c.reg_date, 
                     COUNT(o.order_ID) AS total_orders 
                   FROM customer c
-                  LEFT JOIN orders o ON c.username = o.customer_username
+                  LEFT JOIN orders o ON c.username = o.username
                   GROUP BY c.username";
 
 // Execute SQL query
@@ -70,7 +70,7 @@ mysqli_close($conn);
         cursor: pointer;
         /* font-size: 16px; */
         transition: background-color 0.3s;
-        margin-left: 850px;
+        margin-left: 830px;
         margin-top: -10px;
     }
 

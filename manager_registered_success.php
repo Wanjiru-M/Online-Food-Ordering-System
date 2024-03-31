@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> Manager Login | Le Cafe' </title>
+    <title> Manager Login | Between Two Buns </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/manager_registered_success.css">

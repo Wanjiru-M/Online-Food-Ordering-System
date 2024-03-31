@@ -90,7 +90,8 @@
                     <a href="dishes_report.php">Dishes Report</a>
                     <a href="items_in_stock.php">Food Items in Stock</a>
                            <a href="orders_count_report.php">Orders Count Report</a>
-                    <!-- Add more report links as needed -->
+                           <a href="profit_loss_report.php">Profit & Loss Report</a>
+                    
                 </div>
             </li>
         </ul>

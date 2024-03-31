@@ -1,17 +1,20 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
     
 	<style>
 		table {
-			width: 60%;
+			width: 80%;
 			border-collapse: collapse;
 			margin-left: auto;
 			margin-right: auto;
 		}
 		
 		th, td {
-			padding: 15px;
+			padding: 17px !important;
 			text-align: left;
 			border-bottom: 1px solid #ddd;
 		}
@@ -167,7 +170,7 @@ else {
           <h1>My Orders</h1>
 <?php
 
-session_start();
+
 
 // Check if user is logged in
 if (!isset($_SESSION["login_user2"])) {

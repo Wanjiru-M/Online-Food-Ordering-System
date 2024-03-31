@@ -24,7 +24,7 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
       <option value="user_report">Products in Stock</option>
       <option value="order_report"> Staff Report</option>
       <option value="user_report">Sales Report</option>
-     
+     <option value="user_report">Profit and Loss Report</option>
       </select>
   </nav>
 

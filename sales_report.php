@@ -1,7 +1,6 @@
 <?php
 include('session_m.php');
-// Include your database connection file
-// include('db_connection.php');
+
 
 // Initialize variables with empty values
 $filterOption = '';
@@ -187,7 +186,7 @@ include('admin_panel.php');
                     <th>Order Date</th>
                     <th>Top Product</th>
                     <th>Total Sales</th>
-                    <th>Payment Method</th>
+                    <!-- <th>Payment Method</th> -->
                 </tr>
             </thead>
             <tbody>
@@ -210,7 +209,7 @@ include('admin_panel.php');
                         <td><?php echo $sale['top_product']; ?></td>
                         <td><?php echo $sale['total_sales']; ?></td>
                      
-                        <td><?php echo $sale['payment_method']; ?></td>
+                        <!-- <td><?php echo $sale['payment_method']; ?></td> -->
                     </tr>
                 <?php endforeach; ?>
                  <?php endif; ?>

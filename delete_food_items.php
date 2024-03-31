@@ -19,6 +19,31 @@ header('Location: managerlogin.php');
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
   <body>
+        <style>
+        body{
+            font-family: "Bellota Text", sans-serif;
+        }
+        table {
+            max-width: 100%;
+            border-collapse: collapse;
+            margin-left: 10px;
+        }
+        th, td {
+            padding: 25px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #CEDEBD;
+        }
+        h4{
+            margin-left: 260px;
+            background-color: #183D3D;
+            height: 50px;
+            color:#fff;
+            padding: 10px;
+        }
+    </style>
 <?php
 include('admin_panel.php');
 ?>

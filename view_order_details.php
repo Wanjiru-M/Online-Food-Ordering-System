@@ -45,6 +45,31 @@ if ($update_successful) {
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
   <body>
+           <style>
+        body{
+            font-family: "Bellota Text", sans-serif;
+        }
+        table {
+            max-width: 100%;
+            border-collapse: collapse;
+            margin-left: 10px;
+        }
+        th, td {
+            padding: 25px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #CEDEBD;
+        }
+        h4{
+            margin-left: 260px;
+            background-color: #183D3D;
+            height: 50px;
+            color:#fff;
+            padding: 10px;
+        }
+    </style>
 <?php
 include('admin_panel.php');
 ?>
@@ -137,7 +162,7 @@ include('admin_panel.php');
 
     
     <div class="col-xs-9">
-      <div class="form-area" style="padding: 0px 100px 100px 100px;">
+      <div class="form-area" style="padding: 0px px 100px 100px;">
         <form action="" method="POST">
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> YOUR FOOD ORDER LIST </h3>
