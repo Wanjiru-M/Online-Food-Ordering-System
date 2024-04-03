@@ -22,6 +22,7 @@ header("location: customerlogin.php");
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/foodlist.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-E6zEjhAZw60R43Xen4sOlHaC7K57D5l1aNKLiA6vMd7YAZtTvDvX1uGzZuFS/sIQ" crossorigin="anonymous">
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -275,9 +276,9 @@ else
                 <h3>Follow Us</h3>
                 <p>Stay updated with our latest news and offers:</p>
                 <ul class="social-icons" style="list-style-type: none; padding: 0;">
-                    <li style="display: inline-block; margin-right: 10px;"><a href="www.facebook.com" style="color: #fff;"><i class="fab fa-facebook"></i></a></li>
-                    <li style="display: inline-block; margin-right: 10px;"><a href="www.twitter.com" style="color: #fff;"><i class="fab fa-twitter"></i></a></li>
-                    <li style="display: inline-block;"><a href="www.instagram.com" style="color: #fff;"><i class="fab fa-instagram"></i></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="www.facebook.com" style="color: green;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="www.twitter.com" style="color: green;"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li style="display: inline-block;"><a href="www.instagram.com" style="color: green;"><i class="fab fa-instagram fa-2x"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-4 text-center">
