@@ -247,9 +247,6 @@ if (mysqli_num_rows($result) > 0)
   </table>
     <br>
 
-
-  <?php{ ?>
-
   <!-- <h4><center>0 RESULTS</center> </h4> -->
 
   <?php ?>
