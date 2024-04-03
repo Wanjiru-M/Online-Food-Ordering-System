@@ -210,7 +210,7 @@ $conn->close();
                 <ul class="social-icons" style="list-style-type: none; padding: 0;">
                     <li style="display: inline-block; margin-right: 10px;"><a href="www.facebook.com" style="color: green;"><i class="fab fa-facebook fa-2x"></i></a></li>
                     <li style="display: inline-block; margin-right: 10px;"><a href="www.twitter.com" style="color: green;"><i class="fab fa-twitter fa-2x"></i></a></li>
-                    <li style="display: inline-block;"><a href="www.instagram.com" style="color: green;"><i class="fab fa-instagram"></i></a></li>
+                    <li style="display: inline-block;"><a href="www.instagram.com" style="color: green;"><i class="fab fa-instagram fa-2x"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-4 text-center">

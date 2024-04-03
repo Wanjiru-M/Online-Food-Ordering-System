@@ -8,12 +8,62 @@ session_start();
     <title> About | Between Two Buns </title>
   </head>
   <style>
+    
     body{
       background-color: #ADBC9F !important;
     }
-    p{
-      
-    }
+    .specials{
+           font-family: "Dancing Script", cursive !important;
+        font-size: 40px;
+        text-align:center;
+      }
+      .span-special{
+        color: #FF4500;
+      }
+      .mission-vision {
+  padding: 50px;
+  position: relative; /* Make the section relative to its container */
+  color: #fff; /* Change text color to ensure readability */
+  background-image: url('images/04.jpg');
+}
+
+.mission-vision::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  background-image: linear-gradient(45deg, transparent 25%, #ccc 25%, #ccc 50%, transparent 50%, transparent 75%, #ccc 75%);
+  background-size: 10px 10px;
+  z-index: -1;
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+
+.mission-vision h3,
+.mission-vision p {
+  position: relative; /* Ensure text remains above the overlay */
+  z-index: 1;
+
+}
+
+.mission-vision h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.mission-vision p {
+  font-size: 16px !important;
+  line-height: 1.5;
+  margin-left: 30px;
+  color: #31363F;
+  text-align: justify;
+}
+
     .container{
       font-size: 16px;
     }
@@ -41,9 +91,17 @@ session_start();
 
 .about-content{
   font-size: 20px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  line-height: 1.5;
+  text-align: justify;
 }
 .about-heading{
-  
+  text-align: center;
+  font-size: 40px !important; */
+  color: #333 !important;
+  font-family: "Dancing Script", cursive !important;
+     
+
 }
 .content {
   width: 50%; /* Adjust this value as needed */
@@ -72,6 +130,7 @@ session_start();
 .mission-vision p {
   font-size: 16px;
   line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .footer{
         background-color: #333;
@@ -82,6 +141,18 @@ session_start();
   <link rel="stylesheet" type = "text/css" href ="css/aboutus.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
+  <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
+
+  <link rel="stylesheet" type = "text/css" href ="css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   
@@ -194,25 +265,34 @@ else {
       </div>
     </nav>
 
-<h5>About Our Restaurant<h5>
+<h5 class="specials">About Our <span class="span-special"> Restaurant <h5>
+  <hr class="colored-line">
    <div class="wide">
   <div class="content">
     <h2 class="about-heading" >Serving great food since 2002</h2>
-    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius culpa nam tenetur. Reprehenderit, qui omnis? Porro dicta qui fugiat laboriosam aspernatur nobis amet aliquam nulla est? Aut, eligendi iste? Reiciendis cum suscipit nesciunt laboriosam repellat, consequuntur ratione consectetur nam atque maxime amet quos commodi sunt modi quae repudiandae libero rem aperiam itaque quis quaerat dolore error voluptatibus sapiente. Perferendis provident est facilis nam iusto nulla dolorum dignissimos minima quibusdam veritatis deserunt hic doloremque fugit beatae distinctio, maiores sunt earum doloribus totam nostrum accusantium blanditiis sit ipsa. At voluptates totam amet quaerat nihil aliquam molestiae maiores quos quo nulla! Explicabo.</p>
+    <p class="about-content">Our restaurant,offers an unparalleled culinary experience in the heart of the city. Indulge in the savory delight of our gourmet burgers crafted with the finest ingredients sourced locally. Each bite promises a symphony of flavors that tantalize your taste buds and leave you craving for more. Our commitment to quality shines through every dish, ensuring that every visit is a memorable one. Whether you're a connoisseur of classic flavors or seeking bold, innovative combinations, our menu offers something to delight every palate. Join us at Burger Delight and embark on a gastronomic journey like no other</p>
   </div>
   <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/L6yX6Oxy_J8?si=AGgflx5EMJQcVfzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
   </div>
 </div>
-        <div class="mission-vision">
-  <h3>Our Mission</h3>
+         <div class="mission-vision">
+  <h3 class="specials">Our Mission</h3>
   <hr class="colored-line">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod quis inventore in nisi quos illo possimus quam necessitatibus, laborum consequuntur facilis tempora, sed fuga blanditiis provident earum culpa. Harum voluptates adipisci omnis doloribus minima sunt ea odio! Quas maiores error aliquam laborum quia tempore eius minima facilis, earum fugiat obcaecati doloribus voluptatem quibusdam magni dicta omnis aliquid ratione unde consequuntur excepturi dolores fugit. Enim, ratione voluptas nemo accusamus ad deserunt nulla illum id dolore, doloremque culpa corporis saepe similique numquam aliquam unde esse atque debitis illo ullam! Deserunt laboriosam inventore consequuntur. Vel facilis maxime nulla doloribus eligendi eveniet quaerat.</p>
+  <p>Our mission is to redefine the burger experience by delivering unparalleled taste and quality in every bite. We are dedicated to sourcing the freshest ingredients and crafting them into mouthwatering burgers that exceed our customers' expectations.
+
+Driven by a passion for culinary excellence, we strive to create a welcoming environment where friends and families can come together to enjoy delicious food and create lasting memories. We believe in the power of good food to bring people closer and enrich their lives.
+
+Our commitment extends beyond just serving great burgers. We are also dedicated to sustainability and community involvement.</p>
   
-  <h3>Our Vision</h3>
+  <h3 class="specials">Our Vision</h3>
     <hr class="colored-line">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laudantium unde officiis quam voluptatem cupiditate dignissimos eum perspiciatis voluptatum. Suscipit, vel tempore. Sit ducimus quia deleniti explicabo exercitationem repellat incidunt, eaque aliquam blanditiis praesentium eos repellendus voluptatem illo consequatur labore ea ullam laudantium a! Nam asperiores est labore! Totam odio, officia vero, quasi animi optio suscipit rem velit reiciendis laborum deserunt quia? Quis dolorem itaque obcaecati iusto eos. Animi dolorum molestiae minus voluptatum ducimus deserunt enim, reiciendis excepturi assumenda doloremque. Eligendi laboriosam, qui illo sequi doloremque obcaecati autem ut. Modi inventore dolorem eius tenetur cupiditate expedita enim libero eligendi minus.</p>
+  <p>Our vision is to be the ultimate destination for burger enthusiasts, known not only for our exceptional taste but also for our commitment to innovation and customer satisfaction. We envision a future where every bite of our burgers evokes joy and satisfaction, where our brand becomes synonymous with quality and excellence in the culinary world.
+
+We aspire to create an atmosphere where creativity flourishes, where our chefs are empowered to experiment with flavors and techniques to continuously elevate our menu offerings. Our vision extends beyond just serving delicious food; we aim to create memorable experiences for our customers, forging lasting connections and building a community around our love for burger.</p>
 </div>
+<div class="col-xs-12 line"><hr></div>
 <footer class="footer">
     <div class="container">
         <div class="row">

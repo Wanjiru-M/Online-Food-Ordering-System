@@ -12,6 +12,7 @@ header("location: customerlogin.php");
   <head>
     <title> Cart | Between Two Buns </title>
     <style>
+    
       footer{
         background-color: #333;
         color: #fff;
@@ -25,7 +26,11 @@ header("location: customerlogin.php");
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-E6zEjhAZw60R43Xen4sOlHaC7K57D5l1aNKLiA6vMd7YAZtTvDvX1uGzZuFS/sIQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <body>
 
   
@@ -419,40 +424,7 @@ echo '<script>window.location="cart.php"</script>';
 <?php
 
 ?>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <h3>Contact Us</h3>
-                <p>Email: betweentwobuns@gmail.com</p>
-                <p>Phone: +25412345678</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <h3>Follow Us</h3>
-                <p>Stay updated with our latest news and offers:</p>
-                <ul class="social-icons" style="list-style-type: none; padding: 0;">
-                    <li style="display: inline-block; margin-right: 10px;"><a href="www.facebook.com" style="color: #fff;"><i class="fab fa-facebook"></i></a></li>
-                    <li style="display: inline-block; margin-right: 10px;"><a href="www.twitter.com" style="color: #fff;"><i class="fab fa-twitter"></i></a></li>
-                    <li style="display: inline-block;"><a href="www.instagram.com" style="color: #fff;"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 text-center">
-                <h3>Quick Links</h3>
-                <ul class="quick-links" style="list-style-type: none; padding: 0;">
-                    <li><a href="index.php" style="color: #fff; text-decoration: none;">Home</a></li>
-                    <li><a href="foodlist.php" style="color: #fff; text-decoration: none;">Menu</a></li>
-                    <li><a href="aboutus.php" style="color: #fff; text-decoration: none;">About Us</a></li>
-                    <li><a href="contactus.php" style="color: #fff; text-decoration: none;">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-md-12 text-center">
-                <p style="margin: 0;">Copyright &copy; 2024. All Rights Reserved</p>
-            </div>
-        </div>
-    </div>
-</footer>
 
     </body>
+    <?php include 'footer.php'; ?>
 </html>

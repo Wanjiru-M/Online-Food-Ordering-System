@@ -8,26 +8,30 @@
             </div>
             <div class="col-md-4 text-center">
                 <h3>Follow Us</h3>
+                <br>
                 <p>Stay updated with our latest news and offers:</p>
                 <ul class="social-icons" style="list-style-type: none; padding: 0;">
-                    <li style="display: inline-block; margin-right: 10px;"><a href="www.facebook.com" style="color: #fff;"><i class="fab fa-facebook"></i></a></li>
-                    <li style="display: inline-block; margin-right: 10px;"><a href="www.twitter.com" style="color: #fff;"><i class="fab fa-twitter"></i></a></li>
-                    <li style="display: inline-block;"><a href="www.instagram.com" style="color: #fff;"><i class="fab fa-instagram"></i></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="www.facebook.com" style="color: green;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="www.twitter.com" style="color: green;"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li style="display: inline-block;"><a href="www.instagram.com" style="color: green;"><i class="fab fa-instagram fa-2x"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-4 text-center">
                 <h3>Quick Links</h3>
-                <ul class="quick-links" style="list-style-type: none; padding: 0;">
+                <ul class="quick-links" style="list-style-type: none; padding: 0; margin-bottom: 5px;">
                     <li><a href="index.php" style="color: #fff; text-decoration: none;">Home</a></li>
+                    <br>
                     <li><a href="foodlist.php" style="color: #fff; text-decoration: none;">Menu</a></li>
+                    <br>
                     <li><a href="aboutus.php" style="color: #fff; text-decoration: none;">About Us</a></li>
+                    <br>
                     <li><a href="contactus.php" style="color: #fff; text-decoration: none;">Contact</a></li>
                 </ul>
             </div>
         </div>
-        <div class="row" style="margin-top: 20px;">
+        <div class="row" style="margin-top: 1px;">
             <div class="col-md-12 text-center">
-                <p style="margin: 0;">Copyright &copy; 2024. All Rights Reserved</p>
+                <p style="margin-bottom: 25px;">Copyright &copy; 2024. All Rights Reserved</p>
             </div>
         </div>
     </div>
