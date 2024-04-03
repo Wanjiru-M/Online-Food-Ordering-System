@@ -6,25 +6,25 @@ This is an online food ordering system built using HTML, CSS, JavaScript, and PH
 
 ## Tech Stack
 
-# Frontend
+## Frontend
 
 HTML: Used for structuring the content of web pages.
 CSS: Employed for styling and visually enhancing the presentation of HTML elements.
 JavaScript (JS): Utilized for adding interactivity and dynamic behavior to web pages, enhancing user experience.
 
-# Backend
+## Backend
 
 PHP (Hypertext Preprocessor): Acted as the server-side scripting language, processing requests from the frontend, interacting with the database, and generating dynamic content.
 
-# Database
+## Database
 
 MySQL: Employed as the relational database management system (RDBMS) to store and manage structured data related to the restaurant's menu, user accounts, orders, and transaction details.
 
-# API Integration
+## API Integration
 
 Daraja API: Integrated into the backend to facilitate payment processing. The Daraja API provides a secure and reliable platform for handling online payments, ensuring smooth transactions between the customer and the restaurant.
 
-# Version Control:
+## Version Control:
 
 Git: Used for version control management, enabling tracking of changes to the project's source code.
 
