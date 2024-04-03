@@ -8,9 +8,9 @@ This is an online food ordering system built using HTML, CSS, JavaScript, and PH
 
 ## Frontend
 
-HTML: Used for structuring the content of web pages.
-CSS: Employed for styling and visually enhancing the presentation of HTML elements.
-JavaScript (JS): Utilized for adding interactivity and dynamic behavior to web pages, enhancing user experience.
+- HTML: Used for structuring the content of web pages.
+- CSS: Employed for styling and visually enhancing the presentation of HTML elements.
+- JavaScript (JS): Utilized for adding interactivity and dynamic behavior to web pages, enhancing user experience.
 
 ## Backend
 
