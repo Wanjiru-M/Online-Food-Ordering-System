@@ -90,7 +90,7 @@
                     <a href="sales_report.php">Sales Report</a>
                     <a href="user_report.php">User Report</a>
                     <a href="dishes_report.php">Dishes Report</a>
-                    <a href="items_in_stock.php">Food Items in Stock</a>
+                    <!-- <a href="items_in_stock.php">Food Items in Stock</a> -->
                            <a href="orders_count_report.php">Orders Count Report</a>
                            <a href="profit_loss_report.php">Profit & Loss Report</a>
                     
