@@ -22,8 +22,8 @@ session_start();
       }
       .mission-vision {
   padding: 50px;
-  position: relative; /* Make the section relative to its container */
-  color: #fff; /* Change text color to ensure readability */
+  position: relative; 
+  color: #fff; 
   background-image: url('images/04.jpg');
 }
 
@@ -34,7 +34,7 @@ session_start();
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  background-color: rgba(0, 0, 0, 0.5); 
   background-image: linear-gradient(45deg, transparent 25%, #ccc 25%, #ccc 50%, transparent 50%, transparent 75%, #ccc 75%);
   background-size: 10px 10px;
   z-index: -1;
@@ -44,7 +44,7 @@ session_start();
 
 .mission-vision h3,
 .mission-vision p {
-  position: relative; /* Ensure text remains above the overlay */
+  position: relative; 
   z-index: 1;
 
 }
@@ -83,10 +83,10 @@ session_start();
   
 }
 .colored-line {
-  border-top: 2px solid #ff0000; /* Adjust the color and size as needed */
-  width: 70px; /* Adjust the width of the line */
-  margin-top: 10px; /* Adjust the margin as needed */
-  margin-bottom: 10px; /* Adjust the margin as needed */
+  border-top: 2px solid #ff0000; 
+  width: 70px; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
 }
 
 .about-content{
@@ -104,13 +104,13 @@ session_start();
 
 }
 .content {
-  width: 50%; /* Adjust this value as needed */
+  width: 50%; 
   margin-left: 50px;
 }
 
 
 .video {
-  width: 40%; /* Adjust this value as needed */
+  width: 40%;
 }
 
 .video iframe {
@@ -118,7 +118,7 @@ session_start();
   height: 50%;
 }
 .mission-vision {
-  margin-top: -100px; /* Adjust this value as needed */
+  margin-top: -100px; 
 }
 
 .mission-vision h3 {

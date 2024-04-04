@@ -5,7 +5,7 @@ session_start();
 <html>
 
   <head>
-    <title> Contact | Le Cafe' </title>
+    <title> Contact | Between Two Buns </title>
     <style>
       .footer{
         background-color: #333;
