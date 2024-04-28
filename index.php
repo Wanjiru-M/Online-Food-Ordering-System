@@ -316,6 +316,21 @@ background-image: url('images/back1.jpg');
   background-color: #333;
   color: #fff;
 }
+.mypanel{
+  background-color:#333945;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+}
+.text-info{
+
+}
+.text-dark{
+
+}
+.img-responsive{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
       </style>
 
   

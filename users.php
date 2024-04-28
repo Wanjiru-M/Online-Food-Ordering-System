@@ -70,7 +70,7 @@ include('admin_panel.php');
                 <th>Contact</th>
                 <th>Address</th>
                 <th>Registration Date</th>
-                <!-- <th> Action</th> -->
+                <th> Action</th>
             </tr>
         </thead>
         <tbody>
@@ -84,7 +84,11 @@ include('admin_panel.php');
                 echo "<td>{$row['contact']}</td>";
                 echo "<td>{$row['address']}</td>";
               echo "<td>{$row['reg_date']}</td>";
-          
+          echo "<td>
+              <a href='edit.php'><i class='fa fa-edit'style='color: #333;'></i></a>
+              <a href='delete.php'><i class='fa fa-trash' style='color: #333;'></i></a>
+          </td>";
+    echo "</tr>";
             }
             // Free result set
             mysqli_free_result($resultUsers);

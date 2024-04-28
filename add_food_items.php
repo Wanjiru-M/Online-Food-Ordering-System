@@ -110,7 +110,9 @@ include('admin_panel.php');
     
     <div class="col-xs-9">
       <div class="form-area" style="padding: 0px 100px 100px 100px;">
-        <form action="add_food_items1.php" method="POST">
+       <!-- <form action="add_food_items1.php" method="POST"> -->
+        <form action="add_food_items1.php" method="POST" enctype="multipart/form-data">
+
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> ADD NEW FOOD ITEM HERE </h3>
 
@@ -146,6 +148,7 @@ include('admin_panel.php');
       
     </div>
 </div>
+
 <script>
     document.getElementById('price').addEventListener('input', function (e) {
         // Remove non-numeric characters using regular expression

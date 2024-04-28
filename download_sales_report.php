@@ -2,7 +2,7 @@
 // Include your database connection file
 include('session_m.php');
 
-// Example SQL query to fetch sales report
+// SQL query to fetch sales report
 $sqlSalesReport = "SELECT YEAR(order_date) AS year,
                         MONTH(order_date) AS month,
                         DAY(order_date) AS day,

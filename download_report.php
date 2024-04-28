@@ -2,7 +2,7 @@
 // Include your database connection file
 include('session_m.php');
 
-// Example SQL query to fetch user data and total orders
+//  SQL query to fetch user data and total orders
 $sqlUserReport = "SELECT c.fullname, c.email, c.contact, c.reg_date, 
                     COUNT(o.order_ID) AS total_orders 
                   FROM customer c
