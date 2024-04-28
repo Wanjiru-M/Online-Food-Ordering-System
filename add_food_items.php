@@ -111,7 +111,7 @@ include('admin_panel.php');
     <div class="col-xs-9">
       <div class="form-area" style="padding: 0px 100px 100px 100px;">
        <!-- <form action="add_food_items1.php" method="POST"> -->
-        <form action="add_food_items1.php" method="POST" enctype="multipart/form-data">
+      <form action="add_food_items1.php" method="POST" enctype="multipart/form-data">
 
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> ADD NEW FOOD ITEM HERE </h3>
@@ -128,14 +128,16 @@ include('admin_panel.php');
           <div class="form-group">
             <input type="text" class="form-control" id="description" name="description" placeholder="Your Food Description" required="">
           </div>
-
-          <!-- <div class="form-group"> -->
-            <!-- <input type="text" class="form-control" id="images_path" name="images_path" placeholder="Your Food Image Path [images/<filename>.<extention>]" required=""> -->
-          <!-- </div> -->
-          <div class="form-group">
+<div class="form-group">
+  <input type="file" class="form-control-file" id="food_image" name="food_image" accept="image/*" required>
+</div>
+          <!-- <div class="form-group"> 
+            <input type="text" class="form-control" id="images_path" name="images_path" placeholder="Your Food Image Path [images/<filename>.<extention>]" required="">
+           </div>  -->
+          <!-- <div class="form-group">
     <label for="food_image">Upload Food Image</label>
     <input type="file" class="form-control-file" id="food_image" name="food_image" accept="image/*" required="">
-</div>
+</div> -->
 
 
           <div class="form-group">
@@ -148,7 +150,6 @@ include('admin_panel.php');
       
     </div>
 </div>
-
 <script>
     document.getElementById('price').addEventListener('input', function (e) {
         // Remove non-numeric characters using regular expression
