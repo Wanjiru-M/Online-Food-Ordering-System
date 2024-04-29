@@ -17,7 +17,17 @@ header("location: customerlogin.php");
         background-color: #333;
         color: #fff;
       }
-    
+
+.mypanel{
+  border-radius: 12px !important;
+}
+.img-responsive{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.btn-success{
+  margin-bottom: 70px !important;
+}
       </style>
   </head>
 

@@ -1,22 +1,3 @@
-<?php
-include('session_m.php');
-// Include your database connection file
-// Example: include('db_connection.php');
-
-// Assuming you have a database connection established
-
-// Query to fetch users from the 'customer' table
-$sqlUsers = "SELECT * FROM customer";
-
-// Execute the query
-$resultUsers = mysqli_query($conn, $sqlUsers);
-
-// Check if the query was successful
-if (!$resultUsers) {
-    die("Error fetching users: " . mysqli_error($conn));
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,13 +10,16 @@ if (!$resultUsers) {
     <title>Registered Users</title>
 
     <style>
-        body{
+        /* Add your CSS styles here */
+        /* Styling for the form container */
+        body {
             font-family: "Bellota Text", sans-serif;
         }
         table {
             max-width: 100%;
             border-collapse: collapse;
             margin-left: 260px;
+            margin-bottom: 20px; /* Add margin bottom to create space for the form */
         }
         th, td {
             padding: 25px;
@@ -45,22 +29,78 @@ if (!$resultUsers) {
         th {
             background-color: #CEDEBD;
         }
-        h4{
+        h4 {
             margin-left: 260px;
             background-color: #183D3D;
             height: 50px;
             color:#fff;
             padding: 10px;
         }
+
+        /* Styling for form container */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute; /* Position the form */
+            top: 100px; /* Adjust the top position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            display: none; /* Initially hide the form */
+        }
+        /* .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        } */
+        
+        /* Styling for form labels */
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        /* Styling for form input fields */
+        .form-container input[type='text'],
+        .form-container input[type='email'],
+        .form-container input[type='tel'],
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        /* Styling for form button */
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        /* Hover effect for form button */
+        .form-container button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
-    <?php
+     <?php
 include('admin_panel.php');
 ?>
- <div style="height: 1000px; overflow-y: auto;">
-    <h4>Registered Users</h4>
-   
+    <h2>Registered Users</h2>
     <table>
         <thead>
             <tr>
@@ -69,37 +109,69 @@ include('admin_panel.php');
                 <th>Email</th>
                 <th>Contact</th>
                 <th>Address</th>
-                <th>Registration Date</th>
-                <th> Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             <?php
-            // Fetch and display user data in the table rows
-            while ($row = mysqli_fetch_assoc($resultUsers)) {
-                echo "<tr>";
-                echo "<td>{$row['username']}</td>";
-                echo "<td>{$row['fullname']}</td>";
-                echo "<td>{$row['email']}</td>";
-                echo "<td>{$row['contact']}</td>";
-                echo "<td>{$row['address']}</td>";
-              echo "<td>{$row['reg_date']}</td>";
-          echo "<td>
-              <a href='edit.php'><i class='fa fa-edit'style='color: #333;'></i></a>
-              <a href='delete.php'><i class='fa fa-trash' style='color: #333;'></i></a>
-          </td>";
-    echo "</tr>";
+            // Include database connection
+            require 'connection.php';
+            $conn = Connect();
+
+            // Retrieve list of users from the database
+            $query = "SELECT * FROM customer";
+            $result = $conn->query($query);
+
+            // Display each user in a table row with an edit button
+            if ($result->num_rows > 0) {
+                while ($user = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>" . $user['username'] . "</td>";
+                    echo "<td>" . $user['fullname'] . "</td>";
+                    echo "<td>" . $user['email'] . "</td>";
+                    echo "<td>" . $user['contact'] . "</td>";
+                    echo "<td>" . $user['address'] . "</td>";
+                    echo "<td><button onclick='editUser(\"" . $user['username'] . "\", \"" . $user['fullname'] . "\", \"" . $user['email'] . "\", \"" . $user['contact'] . "\", \"" . $user['address'] . "\")'><i class='fa fa-edit'style='color: #333;'></i></a></td>";
+                
+                    echo "</tr>";
+                }
+            } else {
+                echo "<tr><td colspan='6'>No users found.</td></tr>";
             }
-            // Free result set
-            mysqli_free_result($resultUsers);
+
+            // Close database connection
+            $conn->close();
             ?>
         </tbody>
     </table>
-        </div>
+
+    <!-- Form container for editing user details -->
+    <div class="form-container" id="editForm" style="display: none;">
+        <h2>Edit User</h2>
+        <form method="POST" action="update_user.php">
+            <input type="hidden" name="username" id="editUsername">
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="editFullname" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="editEmail" required><br>
+            <label for="contact">Contact:</label>
+            <input type="tel" name="contact" id="editContact" required><br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="editAddress" required></textarea><br>
+            <button type="submit">Update User</button>
+        </form>
+    </div>
+
+    <script>
+        // Function to populate and display the edit form
+        function editUser(username, fullname, email, contact, address) {
+            document.getElementById('editUsername').value = username;
+            document.getElementById('editFullname').value = fullname;
+            document.getElementById('editEmail').value = email;
+            document.getElementById('editContact').value = contact;
+            document.getElementById('editAddress').value = address;
+            document.getElementById('editForm').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
-
-<?php
-// Close the database connection
-mysqli_close($conn);
-?>

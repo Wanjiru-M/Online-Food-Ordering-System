@@ -53,6 +53,7 @@
         button[type="submit"]:hover {
             background-color: #45a049;
         }
+        
     </style>
 </head>
 </html>
@@ -128,3 +129,4 @@ echo "<button type='submit'>Back to Profile</button>";
 }
 
 ?>
+<?php include 'footer.php'; ?>

@@ -34,6 +34,7 @@ mysqli_close($conn);
         body{
             font-family: "Bellota Text", sans-serif;
         }
+        
         table {
             width: 80%;
             border-collapse: collapse;

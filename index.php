@@ -317,9 +317,9 @@ background-image: url('images/back1.jpg');
   color: #fff;
 }
 .mypanel{
-  background-color:#333945;
+  background-color:#E8EFCF;
   border-radius: 12px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .text-info{
 
@@ -330,6 +330,9 @@ background-image: url('images/back1.jpg');
 .img-responsive{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+.btn-success{
+  margin-bottom: 70px !important;
 }
       </style>
 
@@ -622,7 +625,7 @@ We aspire to create an atmosphere where creativity flourishes, where our chefs a
 
     <div class="container" >
     <div class="col-md-5" style="float: none; margin: 0 auto;">
-      <div class="form-area">
+      <div class="form-area" style="border: 1px solid GREY; border-radius:12px; padding: 10px 40px 60px;margin: 10px 0px 60px;border: 1px solid GREY; opacity: 0.9;">
         <form method="post" action="">
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Contact Form</h3>

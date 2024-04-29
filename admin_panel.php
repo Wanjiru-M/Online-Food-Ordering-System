@@ -8,7 +8,7 @@
     <style>
         /* CSS styling for sidebar and dropdown menu */
         .sidebar {
-            height: 100%;
+            height: 1000px !important;
             width: 250px;
             position: fixed;
             top: 0;
@@ -82,6 +82,7 @@
             <li><a href="delete_food_items.php">Delete Food Items</a></li>
                         <li><a href="view_order_details.php">View Order Details</a></li>
                         <li><a href="users.php">Users</a></li>
+                                                <!-- <li><a href="manage_expense.php">Expenses</a></li> -->
                         <!-- <li><a href="users.php">Users</a></li>
                      -->
             <li class="dropdown">

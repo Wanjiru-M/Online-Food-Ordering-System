@@ -292,7 +292,7 @@ Our commitment extends beyond just serving great burgers. We are also dedicated 
 
 We aspire to create an atmosphere where creativity flourishes, where our chefs are empowered to experiment with flavors and techniques to continuously elevate our menu offerings. Our vision extends beyond just serving delicious food; we aim to create memorable experiences for our customers, forging lasting connections and building a community around our love for burger.</p>
 </div>
-<div class="col-xs-12 line"><hr></div>
+<!-- <div class="col-xs-12 line"><hr></div> -->
 <footer class="footer">
     <div class="container">
         <div class="row">
